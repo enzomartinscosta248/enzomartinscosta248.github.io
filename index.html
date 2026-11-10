@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Enzo Martins Costa · Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF1F4; --surface:#FFFFFF; --ink:#14202B; --muted:#4F5F6E; --line:#CCD5DD; --accent:#1F4FD8; --accent-ink:#FFFFFF; --warm:#C77D00; --bar2:#9AA8B5;
+  --display:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;
+  --body:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1720; --surface:#17222D; --ink:#E8EEF3; --muted:#9FB0BF; --line:#2A3947; --accent:#7FA2FF; --accent-ink:#0F1720; --warm:#F2B134; --bar2:#5A6B7B; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1720; --surface:#17222D; --ink:#E8EEF3; --muted:#9FB0BF; --line:#2A3947; --accent:#7FA2FF; --accent-ink:#0F1720; --warm:#F2B134; --bar2:#5A6B7B; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+header.top{padding:3.5rem 0 2.5rem;border-bottom:1px solid var(--line)}
+.role{margin:0 0 .75rem;color:var(--muted);font-size:.95rem}
+h1{font:700 clamp(2.6rem,9vw,4.4rem)/1 var(--display);letter-spacing:-.03em;margin:0 0 1.25rem}
+.lead{font:500 clamp(1.25rem,4vw,1.6rem)/1.35 var(--display);margin:0 0 1rem;max-width:30rem}
+.sub{color:var(--muted);margin:0 0 1.5rem;max-width:36rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{display:inline-block;padding:.65rem 1rem;border-radius:6px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface);font-weight:500}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+section{padding:2.75rem 0;border-bottom:1px solid var(--line)}
+h2{font:700 1.7rem/1.15 var(--display);letter-spacing:-.02em;margin:0 0 .4rem}
+.intro{color:var(--muted);margin:0 0 1.75rem}
+.proj{padding:1.5rem 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.kind{font-size:.85rem;color:var(--warm);font-weight:500;margin:0 0 .25rem}
+h3{font:700 1.35rem/1.2 var(--display);margin:0 0 .5rem}
+.proj p{margin:0 0 .75rem;max-width:40rem}
+.stack{color:var(--muted);font-size:.9rem}
+.result{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1rem 1.1rem;margin:.25rem 0 1rem}
+.result p{margin:0 0 .9rem;font-size:.95rem}
+.row{display:grid;grid-template-columns:7.5rem 1fr;gap:.75rem;align-items:center;font-size:.9rem;margin-top:.5rem}
+.track{height:.9rem;background:var(--line);border-radius:3px;overflow:hidden}
+.fill{height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:.4rem;font-size:.72rem;font-weight:500;color:var(--accent-ink);white-space:nowrap}
+.fill.a{background:var(--accent)} .fill.b{background:var(--bar2)}
+dl{margin:0;display:grid;grid-template-columns:1fr;gap:1.1rem}
+dt{font-weight:500}
+dd{margin:.15rem 0 0;color:var(--muted)}
+@media(min-width:36rem){dl{grid-template-columns:11rem 1fr;gap:1rem 1.5rem}dd{margin:0}}
+footer{padding:2.5rem 0 3rem}
+footer p{margin:0 0 1rem}
+.mail{font:700 clamp(1.15rem,4.6vw,1.6rem)/1.2 var(--display);overflow-wrap:anywhere}
+@media (prefers-reduced-motion:no-preference){
+  .fill{transition:width .8s ease}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <p class="role">Estudante de Engenharia de Software · Universidade Positivo · Londrina, PR</p>
+    <h1>Enzo Martins Costa</h1>
+    <p class="lead">Desenvolvo APIs, análises de dados e modelos de machine learning em Python.</p>
+    <p class="sub">Busco estágio em desenvolvimento. Abaixo, quatro projetos de dados e machine learning, cada um com código, testes e documentação.</p>
+    <div class="links">
+      <a class="btn primary" href="mailto:enzomartinscosta248@gmail.com">Enviar e-mail</a>
+      <a class="btn" href="https://github.com/enzomartinscosta248">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/enzo-martins-639948297">LinkedIn</a>
+    </div>
+  </header>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <p class="intro">Todos em Python, com testes automatizados e integração contínua configurada no GitHub Actions.</p>
+
+    <article class="proj">
+      <p class="kind">Kaggle · ML clássico</p>
+      <h3>Titanic ML Pipeline</h3>
+      <p>Pipeline reprodutível para a competição Titanic do Kaggle: features sem vazamento de dados, 8 modelos comparados por validação cruzada repetida, stacking e geração da submissão por linha de comando.</p>
+      <p class="stack">Python · scikit-learn · pandas · pytest</p>
+      <a href="https://github.com/enzomartinscosta248/titanic-ml-pipeline">Ver código no GitHub</a>
+    </article>
+
+    <article class="proj">
+      <p class="kind">NLP · Hugging Face</p>
+      <h3>Sentimento em português com Transformers</h3>
+      <p>Fine-tuning de BERTimbau, XLM-R e DistilBERT para classificar tweets em português, comparado a um baseline TF-IDF, com análise de erros, model card pronto para o Hugging Face Hub e demo em Gradio.</p>
+      <p class="stack">Python · PyTorch · Transformers · Gradio</p>
+      <a href="https://github.com/enzomartinscosta248/ptbr-sentiment-transformers">Ver código no GitHub</a>
+    </article>
+
+    <article class="proj">
+      <p class="kind">Jupyter · Machine learning</p>
+      <h3>Classificador de avaliações de clientes</h3>
+      <p>Notebook que classifica avaliações do dataset público da Olist como positivas ou negativas e compara Naive Bayes, Regressão Logística e SVM, com interpretação dos termos e análise dos erros mais confiantes.</p>
+      <p class="stack">Python · pandas · scikit-learn · Jupyter</p>
+      <a href="https://github.com/enzomartinscosta248/olist-review-classifier">Ver código no GitHub</a>
+    </article>
+
+    <article class="proj">
+      <p class="kind">SQL · Dashboard</p>
+      <h3>Dashboard inteligente de pedidos</h3>
+      <p>Dashboard em Streamlit sobre um banco SQLite com pedidos fictícios de delivery: horários de pico, produtos populares, atrasos e previsão de demanda comparada com os pedidos reais.</p>
+      <div class="result">
+        <p>Teste nas últimas 4 semanas (dados fictícios): erro médio por dia, em pedidos e MAPE.</p>
+        <div class="row"><span>Regressão</span><div class="track"><div class="fill a" style="width:79%">23 · 8,9%</div></div></div>
+        <div class="row"><span>Método ingênuo</span><div class="track"><div class="fill b" style="width:100%">29 · 10,9%</div></div></div>
+      </div>
+      <p class="stack">Python · SQL · pandas · Streamlit</p>
+      <a href="https://github.com/enzomartinscosta248/delivery-orders-dashboard">Ver código no GitHub</a>
+    </article>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <p class="intro">&nbsp;</p>
+    <dl>
+      <dt>Linguagens</dt><dd>Python, C, JavaScript, HTML, CSS</dd>
+      <dt>Dados e machine learning</dt><dd>pandas, Matplotlib, scikit-learn, Transformers, Jupyter</dd>
+      <dt>Back-end e bancos de dados</dt><dd>FastAPI, Flask, APIs REST, SQL, SQLite, PostgreSQL</dd>
+      <dt>Conceitos e ferramentas</dt><dd>POO, estruturas de dados, CRUD, testes, Git e GitHub</dd>
+    </dl>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação</h2>
+    <p class="intro">Engenharia de Software · Universidade Positivo<br>Cursando o 2º semestre · conclusão prevista em dezembro de 2029</p>
+    <p class="stack" style="margin:0 0 1.75rem">Inglês: leitura e escrita intermediárias; conversação em desenvolvimento.</p>
+    <h3>Projetos acadêmicos</h3>
+    <p style="max-width:40rem;margin:0 0 .6rem"><strong>Em Python:</strong> API REST de delivery com FastAPI, gestão financeira, análise de pedidos e vendas com Pandas e estoque com API.</p>
+    <p style="max-width:40rem;margin:0"><strong>Em C:</strong> gerenciamento de pedidos, controle de estoque, logística e entregas com filas, e sistema bancário.</p>
+  </section>
+
+  <footer id="contato">
+    <h2>Contato</h2>
+    <p class="intro">Estou buscando estágio em desenvolvimento de software. Me escreva ou veja o código no GitHub.</p>
+    <p><a class="mail" href="mailto:enzomartinscosta248@gmail.com">enzomartinscosta248@gmail.com</a></p>
+    <div class="links">
+      <a class="btn" href="https://linkedin.com/in/enzo-martins-639948297">LinkedIn</a>
+      <a class="btn" href="https://github.com/enzomartinscosta248">GitHub</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
